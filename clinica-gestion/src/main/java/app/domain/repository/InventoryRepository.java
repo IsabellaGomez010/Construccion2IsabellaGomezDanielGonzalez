@@ -1,4 +1,4 @@
-package app.domain.port;
+package app.domain.repository;
 
 import app.domain.model.Medication;
 import app.domain.model.Procedure;

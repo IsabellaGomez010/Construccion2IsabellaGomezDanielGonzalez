@@ -1,5 +1,5 @@
 package app.domain.model;
-import app.domain.model.enum.Gender;
+import app.domain.model.enums.Gender;
 
 
 public class Patient {
@@ -13,7 +13,7 @@ public class Patient {
 	private EmergencyContact emergencyContact;
 	private Insurance insurance;
 
-	public Patient(String idNumber, String fullName, String birthDate, String gender, String address, String phoneNumber, String email, EmergencyContact emergencyContact, Insurance insurance) {
+	public Patient(String idNumber, String fullName, String birthDate, Gender gender, String address, String phoneNumber, String email, EmergencyContact emergencyContact, Insurance insurance) {
 		this.idNumber = idNumber;
 		this.fullName = fullName;
 		this.birthDate = birthDate;
@@ -28,7 +28,7 @@ public class Patient {
 	public String getIdNumber() { return idNumber; }
 	public String getFullName() { return fullName; }
 	public String getBirthDate() { return birthDate; }
-	public String getGender() { return gender; }
+	public Gender getGender() { return gender; }
 	public String getAddress() { return address; }
 	public String getPhoneNumber() { return phoneNumber; }
 	public String getEmail() { return email; }

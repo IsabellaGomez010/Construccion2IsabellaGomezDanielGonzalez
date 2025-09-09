@@ -1,5 +1,4 @@
-package app.domain.model.enum;
-
+package app.domain.model.enums;
 
 public enum UserRole {
 	ADMINISTRATIVE,

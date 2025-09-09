@@ -1,5 +1,5 @@
 package app.domain.model;
-import app.domain.model.enum.UserRole;
+import app.domain.model.enums.UserRole;
 
 
 public class User {
@@ -13,7 +13,7 @@ public class User {
 	private String username;
 	private String password;
 
-	public User(String fullName, String idNumber, String email, String phoneNumber, String birthDate, String address, String role, String username, String password) {
+	public User(String fullName, String idNumber, String email, String phoneNumber, String birthDate, String address, UserRole role, String username, String password) {
 		this.fullName = fullName;
 		this.idNumber = idNumber;
 		this.email = email;
@@ -31,7 +31,7 @@ public class User {
 	public String getPhoneNumber() { return phoneNumber; }
 	public String getBirthDate() { return birthDate; }
 	public String getAddress() { return address; }
-	public String getRole() { return role; }
+	public UserRole getRole() { return role; }
 	public String getUsername() { return username; }
 	public String getPassword() { return password; }
 
