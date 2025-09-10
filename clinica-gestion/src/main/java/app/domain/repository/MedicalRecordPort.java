@@ -1,8 +1,8 @@
-package app.application.port.in;
+package app.domain.repository;
 
 import app.domain.model.MedicalRecord;
 
-public interface MedicalRecordUseCase {
+public interface MedicalRecordPort {
 	void saveMedicalRecord(MedicalRecord medicalRecord);
 	MedicalRecord getMedicalRecordByPatientId(String patientIdNumber);
 }

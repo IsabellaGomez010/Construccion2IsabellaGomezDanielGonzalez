@@ -1,6 +1,6 @@
 package app.domain.model;
-import app.domain.model.enums.Gender;
 
+import app.domain.model.enums.Gender;
 
 public class Patient {
 	private String idNumber;
@@ -25,20 +25,46 @@ public class Patient {
 		this.insurance = insurance;
 	}
 
-	public String getIdNumber() { return idNumber; }
-	public String getFullName() { return fullName; }
-	public String getBirthDate() { return birthDate; }
-	public Gender getGender() { return gender; }
-	public String getAddress() { return address; }
-	public String getPhoneNumber() { return phoneNumber; }
-	public String getEmail() { return email; }
-	public EmergencyContact getEmergencyContact() { return emergencyContact; }
-	public Insurance getInsurance() { return insurance; }
+	public String getIdNumber() {
+		return idNumber;
+	}
 
-	
+	public String getFullName() {
+		return fullName;
+	}
+
+	public String getBirthDate() {
+		return birthDate;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public EmergencyContact getEmergencyContact() {
+		return emergencyContact;
+	}
+
+	public Insurance getInsurance() {
+		return insurance;
+	}
+
 	private boolean isValidPhoneNumber() {
 		return phoneNumber != null && phoneNumber.matches("\\d{10}");
 	}
+
 	private boolean isValidBirthDate() {
 		return birthDate != null && birthDate.matches("\\d{2}/\\d{2}/\\d{4}");
 	}

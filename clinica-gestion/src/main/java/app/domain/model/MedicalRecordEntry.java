@@ -3,6 +3,26 @@ package app.domain.model;
 import java.util.List;
 
 public class MedicalRecordEntry {
+	public List<OrderItem> getMedications() {
+		return orders == null ? java.util.Collections.emptyList() : orders.stream()
+			.flatMap(order -> order.getItems().stream())
+			.filter(item -> "MEDICATION".equalsIgnoreCase(item.getType()))
+			.collect(java.util.stream.Collectors.toList());
+	}
+
+	public List<OrderItem> getProcedures() {
+		return orders == null ? java.util.Collections.emptyList() : orders.stream()
+			.flatMap(order -> order.getItems().stream())
+			.filter(item -> "PROCEDURE".equalsIgnoreCase(item.getType()))
+			.collect(java.util.stream.Collectors.toList());
+	}
+
+	public List<OrderItem> getDiagnosticAids() {
+		return orders == null ? java.util.Collections.emptyList() : orders.stream()
+			.flatMap(order -> order.getItems().stream())
+			.filter(item -> "DIAGNOSTIC_AID".equalsIgnoreCase(item.getType()))
+			.collect(java.util.stream.Collectors.toList());
+	}
 	private String date;
 	private String doctorIdNumber;
 	private String consultationReason;

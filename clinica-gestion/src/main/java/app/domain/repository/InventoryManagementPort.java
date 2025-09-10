@@ -1,10 +1,10 @@
-package app.application.port.in;
+package app.domain.repository;
 
 import app.domain.model.Medication;
 import app.domain.model.Procedure;
 import app.domain.model.DiagnosticAid;
 
-public interface InventoryManagementUseCase {
+public interface InventoryManagementPort {
 	void addMedication(Medication medication);
 	void addProcedure(Procedure procedure);
 	void addDiagnosticAid(DiagnosticAid diagnosticAid);
