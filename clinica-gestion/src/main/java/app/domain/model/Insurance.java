@@ -19,7 +19,12 @@ public class Insurance {
 	public boolean isActive() { return isActive; }
 	public String getExpirationDate() { return expirationDate; }
 
-	private boolean isValidExpirationDate() {
+    public void setCompanyName(String companyName) { this.companyName = companyName; }
+    public void setPolicyNumber(String policyNumber) { this.policyNumber = policyNumber; }
+    public void setActive(boolean active) { isActive = active; }
+    public void setExpirationDate(String expirationDate) { this.expirationDate = expirationDate; }
+
+    private boolean isValidExpirationDate() {
 		return expirationDate != null && expirationDate.matches("\\d{2}/\\d{2}/\\d{4}");
 	}
 }

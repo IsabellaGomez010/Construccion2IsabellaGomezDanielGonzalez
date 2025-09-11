@@ -25,43 +25,27 @@ public class Patient {
 		this.insurance = insurance;
 	}
 
-	public String getIdNumber() {
-		return idNumber;
-	}
+	public String getIdNumber() { return idNumber; }
+	public String getFullName() { return fullName; }
+	public String getBirthDate() { return birthDate; }
+	public Gender getGender() { return gender; }
+	public String getAddress() { return address; }
+	public String getPhoneNumber() { return phoneNumber; }
+	public String getEmail() { return email; }
+	public EmergencyContact getEmergencyContact() { return emergencyContact; }
+	public Insurance getInsurance() { return insurance; }
 
-	public String getFullName() {
-		return fullName;
-	}
+    public void setIdNumber(String idNumber) { this.idNumber = idNumber; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
+    public void setGender(Gender gender) { this.gender = gender; }
+    public void setAddress(String address) { this.address = address; }
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+    public void setEmail(String email) { this.email = email; }
+    public void setEmergencyContact(EmergencyContact emergencyContact) { this.emergencyContact = emergencyContact; }
+    public void setInsurance(Insurance insurance) { this.insurance = insurance; }
 
-	public String getBirthDate() {
-		return birthDate;
-	}
-
-	public Gender getGender() {
-		return gender;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public EmergencyContact getEmergencyContact() {
-		return emergencyContact;
-	}
-
-	public Insurance getInsurance() {
-		return insurance;
-	}
-
-	private boolean isValidPhoneNumber() {
+    private boolean isValidPhoneNumber() {
 		return phoneNumber != null && phoneNumber.matches("\\d{10}");
 	}
 

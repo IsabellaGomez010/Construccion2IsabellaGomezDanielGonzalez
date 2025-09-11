@@ -17,27 +17,19 @@ public class Order {
 		this.items = items;
 	}
 
-	public String getOrderNumber() {
-		return orderNumber;
-	}
+	public String getOrderNumber() { return orderNumber; }
+	public String getPatientIdNumber() { return patientIdNumber; }
+	public String getDoctorIdNumber() { return doctorIdNumber; }
+	public String getCreationDate() { return creationDate; }
+	public List<OrderItem> getItems() { return items; }
 
-	public String getPatientIdNumber() {
-		return patientIdNumber;
-	}
+    public void setOrderNumber(String orderNumber) { this.orderNumber = orderNumber; }
+    public void setPatientIdNumber(String patientIdNumber) { this.patientIdNumber = patientIdNumber; }
+    public void setDoctorIdNumber(String doctorIdNumber) { this.doctorIdNumber = doctorIdNumber; }
+    public void setCreationDate(String creationDate) { this.creationDate = creationDate; }
+    public void setItems(List<OrderItem> items) { this.items = items; }
 
-	public String getDoctorIdNumber() {
-		return doctorIdNumber;
-	}
-
-	public String getCreationDate() {
-		return creationDate;
-	}
-
-	public List<OrderItem> getItems() {
-		return items;
-	}
-
-	private boolean isValidOrderNumber() {
+    private boolean isValidOrderNumber() {
 		return orderNumber != null && orderNumber.matches("\\d{1,6}");
 	}
 }

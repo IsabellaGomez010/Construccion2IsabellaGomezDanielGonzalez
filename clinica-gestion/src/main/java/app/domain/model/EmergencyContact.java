@@ -16,7 +16,11 @@ public class EmergencyContact {
 	public String getRelationship() { return relationship; }
 	public String getPhoneNumber() { return phoneNumber; }
 
-	private boolean isValidPhoneNumber() {
+    public void setFullName(String fullName) { this.fullName = fullName; }
+    public void setRelationship(String relationship) { this.relationship = relationship; }
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+
+    private boolean isValidPhoneNumber() {
 		return phoneNumber != null && phoneNumber.matches("\\d{10}");
 	}
 }

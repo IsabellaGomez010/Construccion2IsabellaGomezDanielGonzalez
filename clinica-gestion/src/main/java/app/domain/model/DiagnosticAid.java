@@ -15,4 +15,8 @@ public class DiagnosticAid {
 	public String getDiagnosticAidId() { return diagnosticAidId; }
 	public String getName() { return name; }
 	public double getCost() { return cost; }
+
+    public void setDiagnosticAidId(String diagnosticAidId) { this.diagnosticAidId = diagnosticAidId; }
+    public void setName(String name) { this.name = name; }
+    public void setCost(double cost) { this.cost = cost; }
 }

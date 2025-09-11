@@ -15,4 +15,8 @@ public class Medication {
 	public String getMedicationId() { return medicationId; }
 	public String getName() { return name; }
 	public double getCost() { return cost; }
+
+    public void setMedicationId(String medicationId) { this.medicationId = medicationId; }
+    public void setName(String name) { this.name = name; }
+    public void setCost(double cost) { this.cost = cost; }
 }

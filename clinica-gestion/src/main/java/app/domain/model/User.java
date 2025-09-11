@@ -25,43 +25,27 @@ public class User {
 		this.password = password;
 	}
 
-	public String getFullName() {
-		return fullName;
-	}
+	public String getFullName() { return fullName; }
+	public String getIdNumber() { return idNumber; }
+	public String getEmail() { return email; }
+	public String getPhoneNumber() { return phoneNumber; }
+	public String getBirthDate() { return birthDate; }
+	public String getAddress() { return address; }
+	public UserRole getRole() { return role; }
+	public String getUsername() { return username; }
+	public String getPassword() { return password; }
 
-	public String getIdNumber() {
-		return idNumber;
-	}
+    public void setFullName(String fullName) { this.fullName = fullName; }
+    public void setIdNumber(String idNumber) { this.idNumber = idNumber; }
+    public void setEmail(String email) { this.email = email; }
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
+    public void setAddress(String address) { this.address = address; }
+    public void setRole(UserRole role) { this.role = role; }
+    public void setUsername(String username) { this.username = username; }
+    public void setPassword(String password) { this.password = password; }
 
-	public String getEmail() {
-		return email;
-	}
-
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-
-	public String getBirthDate() {
-		return birthDate;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public UserRole getRole() {
-		return role;
-	}
-
-	public String getUsername() {
-		return username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	private boolean isValidEmail() {
+    private boolean isValidEmail() {
 		return email != null && email.contains("@") && email.length() <= 50;
 	}
 

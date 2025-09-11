@@ -14,8 +14,10 @@ public class MedicalRecord {
 	public String getPatientIdNumber() {
 		return patientIdNumber;
 	}
-
-	public Map<String, MedicalRecordEntry> getEntries() {
+    public Map<String, MedicalRecordEntry> getEntries() {
 		return entries;
 	}
+
+    public void setPatientIdNumber(String patientIdNumber) { this.patientIdNumber = patientIdNumber;}
+    public void setEntries(Map<String, MedicalRecordEntry> entries) {this.entries = entries; }
 }

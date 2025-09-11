@@ -15,4 +15,8 @@ public class Procedure {
 	public String getProcedureId() { return procedureId; }
 	public String getName() { return name; }
 	public double getCost() { return cost; }
+
+    public void setProcedureId(String procedureId) { this.procedureId = procedureId; }
+    public void setName(String name) { this.name = name; }
+    public void setCost(double cost) { this.cost = cost; }
 }

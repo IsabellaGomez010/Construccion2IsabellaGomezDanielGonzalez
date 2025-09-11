@@ -45,4 +45,16 @@ public class OrderItem {
 	public boolean isRequiresSpecialist() { return requiresSpecialist; }
 	public String getSpecialistTypeId() { return specialistTypeId; }
 	public int getQuantity() { return quantity; }
+
+    public void setItemNumber(int itemNumber) { this.itemNumber = itemNumber; }
+    public void setType(String type) { this.type = type; }
+    public void setName(String name) { this.name = name; }
+    public void setCost(double cost) { this.cost = cost; }
+    public void setDose(String dose) { this.dose = dose; }
+    public void setTreatmentDuration(String treatmentDuration) { this.treatmentDuration = treatmentDuration; }
+    public void setRepeatCount(int repeatCount) { this.repeatCount = repeatCount; }
+    public void setFrequency(String frequency) { this.frequency = frequency; }
+    public void setRequiresSpecialist(boolean requiresSpecialist) { this.requiresSpecialist = requiresSpecialist; }
+    public void setSpecialistTypeId(String specialistTypeId) { this.specialistTypeId = specialistTypeId; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 }

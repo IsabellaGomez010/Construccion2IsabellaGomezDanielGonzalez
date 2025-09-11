@@ -17,4 +17,9 @@ public class VitalSigns {
 	public double getTemperature() { return temperature; }
 	public int getPulse() { return pulse; }
 	public int getOxygenLevel() { return oxygenLevel; }
+
+    public void setBloodPressure(String bloodPressure) { this.bloodPressure = bloodPressure; }
+    public void setTemperature(double temperature) { this.temperature = temperature; }
+    public void setPulse(int pulse) { this.pulse = pulse; }
+    public void setOxygenLevel(int oxygenLevel) { this.oxygenLevel = oxygenLevel; }
 }
